@@ -1,0 +1,87 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+@import 'projects';
+@import 'contact';
+@import 'responsive';
+
+body {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px 12px 20px;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  background-color: rgb(24, 135, 204);
+  cursor: pointer;
+  box-shadow: #37378b 0 10px 20px -10px;
+  backface-visibility: hidden;
+  transition: background-color 0.5s ease-in-out
+}
+
+.btn:hover {
+  background-color: rgb(32, 146, 216);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+.text-secondary {
+  color: white;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+
+  .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    a {
+      padding: 0.4rem;
+      @include transition-ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: set-text-color($primary-color);
+}

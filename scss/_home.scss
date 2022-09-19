@@ -1,0 +1,55 @@
+.home {
+  height: 100%;
+  padding-top: 30vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: 
+    linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url('../img/Avatar.jpg') center top;
+  background-size: cover;
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &__greeting {
+    width: 100%;
+    font-size: 40px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+  }
+
+  &__about-me {
+    width: 80%;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+
+    &--last {
+      color: $secondary-color;
+      font-weight: 700;
+    }
+  }
+}
